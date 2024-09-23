@@ -1,0 +1,56 @@
+.toggle_btn_container {
+  height: max-content;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.toggle_btn_container p {
+  font-size: var(--sans-serif-size-small);
+  font-family: var(--sans-serif);
+}
+
+.toggle_btn_box {
+  width: 60px;
+  height: 20px;
+  background-color: var(--web-white-color);
+  border-radius: 30px;
+  padding: 5px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.toggle_label {
+  font-size: var(--sans-serif-size-regular);
+  font-family: var(--sans-serif);
+  position: absolute;
+}
+
+.toggle_label_left {
+  right: 15px;
+}
+
+.toggle_label_right {
+  left: 10px;
+}
+
+.toggle_btn {
+  width: 20px;
+  height: 20px;
+  background-color: var(--web-primary-color);
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  cursor: pointer;
+  position: absolute;
+  transition: transform 0.25s ease-in;
+}
+
+.toggle_btn_active {
+  transform: translateX(5px);
+}
+
+.toggle_btn_inactive {
+  transform: translateX(35px);
+}

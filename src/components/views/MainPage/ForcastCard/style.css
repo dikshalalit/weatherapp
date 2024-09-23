@@ -1,0 +1,20 @@
+.forcast_card {
+  display: flex;
+  width: 200px;
+  height: 80px;
+  background-color: var(--web-white-color);
+  border-radius: 10px;
+  padding: 10px;
+  justify-content: space-between;
+  outline: 10px solid var(--web-secondary-color);
+}
+
+.forcast_card_column p {
+  font-family: var(--sans-serif);
+  color: var(--web-primary-color);
+  font-size: var(--sans-serif-size-regular);
+}
+
+.forcast_card_column p:nth-child(2) {
+  font-weight: var(--sans-serif-semi-bold);
+}

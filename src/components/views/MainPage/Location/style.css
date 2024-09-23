@@ -1,0 +1,33 @@
+.weather_location_container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.weather_location_row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.weather_location_row p {
+  font-family: var(--sans-serif);
+  color: var(--web-primary-color);
+  font-size: var(--sans-serif-size-regular);
+  font-weight: var(--sans-serif-regular);
+}
+
+.weather_location_time {
+  font-family: var(--sans-serif);
+  color: var(--web-primary-color);
+  font-size: var(--sans-serif-size-small);
+  font-weight: var(--sans-serif-regular);
+  padding: 0;
+  margin: 0;
+}
+
+.location_icon {
+  color: var(--web-primary-color);
+}

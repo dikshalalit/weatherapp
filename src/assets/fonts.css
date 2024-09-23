@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+:root {
+  --sans-serif: "Roboto", sans-serif;
+
+  --sans-serif-light: 300;
+  --sans-serif-regular: 400;
+  --sans-serif-medium: 500;
+  --sans-serif-semi-bold: 600;
+  --sans-serif-bold: 700;
+
+  --sans-serif-size-extra-small: 0.8rem;
+  --sans-serif-size-small: 0.9rem;
+  --sans-serif-size-regular: 1rem;
+  --sans-serif-size-medium: 1.2rem;
+  --sans-serif-size-large: 1.5rem;
+  --sans-serif-size-extra-large: 2rem;
+}
