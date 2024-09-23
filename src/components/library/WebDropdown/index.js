@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useCallback, useEffect, useRef, useState } from "react";
 import { IoMdArrowDropdown } from "react-icons/io";
 import { useOutsideClick } from "../../../base/context/OutsideClick";
 import "./style.css";
@@ -12,7 +12,7 @@ export default function WebDropdown({
 }) {
   const [optionVisibility, setOptionVisibility] = useState(false);
   const outsideClick = useOutsideClick();
-  const ref = useRef();
+  const ref = useRef(null);
 
   const [searchQuery, setSearchQuery] = useState("");
   const [optionsList, setOptionsList] = useState(options);
@@ -21,14 +21,16 @@ export default function WebDropdown({
     setOptionVisibility(true);
   };
 
-  const handleClose = () => {
-    setOptionVisibility(false);
-    setOptionsList(options);
-  };
+  const handleClose = useCallback(() => {
+    if (ref.current) {
+      setOptionVisibility(false);
+      setOptionsList(options);
+    }
+  }, [ref, options]);
 
   useEffect(() => {
     outsideClick.getComponent(ref, handleClose);
-  }, []);
+  }, [outsideClick, handleClose]);
 
   useEffect(() => {
     const debounceTimeout = setTimeout(() => {
