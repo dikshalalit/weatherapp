@@ -69,10 +69,8 @@ export default function MainPage() {
         return response.json();
       })
       .then((data) => {
-        if (data?.cod == 200) {
           setData(data);
           setCityToLocalStorage(data);
-        }
       })
       .catch((err) => {
         alert("City not found");
